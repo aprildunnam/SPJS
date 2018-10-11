@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "debugMode": true,
+  "elmType": "div",
+  "attributes": {
+    "class": "=if(@currentField == '','sp-field-severity--warning','')"
+
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "display": "inline-block",
+        "padding": "0 4px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "=if(@currentField == true, 'Yes', 'No') "
+    }
+  ]
+}

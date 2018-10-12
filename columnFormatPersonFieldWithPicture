@@ -1,0 +1,99 @@
+{
+    "$schema": "http://columnformatting.sharepointpnp.com/columnFormattingSchema.json",
+    "debugMode": true,    
+    "elmType": "div",
+    "style":{
+                    "font-family": "Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif",
+                    "-webkit-font-smoothing": "antialiased",
+                    "box-sizing": "border-box",
+                    "margin": "0",
+                    "padding": "0",
+                    "box-shadow": "none",
+                    "color": "#333",
+                   "font-size": "10px",
+                    "font-weight": "400",
+                    "line-height": "1",
+                    "position": "relative",
+                    "width": "100%",
+                    "height": "48px",
+                    "display": "table",
+                    "table-layout": "fixed",
+                    "border-collapse": "separate"
+    },
+    "children": [
+        {
+                "elmType":"div",
+                "style":{
+                    "position":"absolute",
+                    "overflow":"hidden",
+                    "text-align":"center",
+                    "max-width":"48px",
+                    "height":"48px",
+                    "border-radius":"50%",
+                    "z-index":"0",
+                    "width":"100%",
+                    "top":"0",
+                    "left":"0"
+                },
+                "children":[
+                    {
+                        "elmType":"img",
+                        "style":{
+                            "position": "absolute",
+                            "top": "0",
+                            "left": "0",
+                            "height": "48px",
+                            "z-index": "10",
+                            "width": "100%"
+                        },
+                        "attributes":{
+                            "src":{
+                            "operator": "+",
+                            "operands": [
+                                "/_layouts/15/userphoto.aspx?accountname=",
+                                "@currentField.email"
+                            ]
+                            }
+                        }
+
+                    }
+                ]
+            },
+            {
+              "elmType":"div",
+              "style":{
+                    "padding":" 0 12px",
+                    "vertical-align":" middle",
+                    "overflow": "hidden",
+                    "text-align":" left",
+                    "padding-left":" 60px",
+                    "display":" table-cell",
+                    "width": "100%"
+              },
+              "children":[
+                  {
+                      "elmType":"div",
+                      "style":{
+                              "display":" block",
+                            "white-space": "nowrap",
+                            "width":" 100%",
+                            "overflow":" hidden",
+                            "text-overflow":" ellipsis"
+                      },
+                      "txtContent":"@currentField.title"
+                  },
+                  {
+                      "elmType":"div",
+                      "style":{
+                              "display":" block",
+                            "white-space": "nowrap",
+                            "width":" 100%",
+                            "overflow":" hidden",
+                            "text-overflow":" ellipsis"
+                      },
+                      "txtContent":"@currentField.email"
+                  }                
+              ]
+            }
+		]
+}

@@ -10,6 +10,10 @@ This sample features the following:
 - The Person's name is a hyperlink to their Profile
 - Pulls in their Twitter Profile Picture
 
+![Twitter Format Screenshot](./TwitterFormat.png)
+
+Screen Capture of how the links work:
+
 ![Twitter Format Screenshot](./SPTwitter.gif)
 
 
